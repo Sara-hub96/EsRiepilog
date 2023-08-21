@@ -46,6 +46,14 @@ public class Main {
 
             }
         }
+
+        Student bestStudent = students[0];
+        for (Student student : students) {
+            if(student.calculateGradeAverage() > bestStudent.calculateGradeAverage()){
+                student = bestStudent;
+            }
+        }
+        System.out.println(bestStudent.getName() + " " + bestStudent.getSurname());
     }
 }
 

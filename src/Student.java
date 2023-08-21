@@ -67,7 +67,7 @@ public class Student {
         return grades;
     }
 
-    public int calculateGradeAverage(List<Integer> grades){
+    public int calculateGradeAverage(){
           int sum = 0, avg;
           for (int i = 0; i < grades.size(); i++){
                sum+= grades.get(i);
@@ -77,7 +77,7 @@ public class Student {
     }
 
     public boolean isExcellent(){
-       return calculateGradeAverage(grades) > 28;
+       return calculateGradeAverage() > 28;
     }
 }
 
