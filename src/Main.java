@@ -24,9 +24,9 @@ public class Main {
         professor1.assignGrade(student3, 30);
         professor1.assignGrade(student4, 27);
 
-        professor2.assignGrade(student1, 30);
+        professor2.assignGrade(student1, 28);
         professor2.assignGrade(student2, 25);
-        professor2.assignGrade(student3, 28);
+        professor2.assignGrade(student3, 30);
         professor2.assignGrade(student4, 24);
 
         Student[] students = new Student[4];
@@ -50,7 +50,7 @@ public class Main {
         Student bestStudent = students[0];
         for (Student student : students) {
             if(student.calculateGradeAverage() > bestStudent.calculateGradeAverage()){
-                student = bestStudent;
+                bestStudent = student;
             }
         }
         System.out.println(bestStudent.getName() + " " + bestStudent.getSurname());

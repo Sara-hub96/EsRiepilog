@@ -77,7 +77,7 @@ public class Student {
     }
 
     public boolean isExcellent(){
-       return calculateGradeAverage() > 28;
+       return calculateGradeAverage() >= 28;
     }
 }
 
