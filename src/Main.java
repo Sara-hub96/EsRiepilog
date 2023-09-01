@@ -43,7 +43,6 @@ public class Main {
         for (Student student : students) {
             if (student.isExcellent()) {
                 System.out.println(student.getName() + " " + student.getSurname());
-
             }
         }
 
